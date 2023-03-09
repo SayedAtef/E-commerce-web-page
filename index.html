@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- link to CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Valinteca Task</title>
+    <!-- link to file used to store data -->
+    <script src="src/script.js"></script>
+  </head>
+
+  <body onload="storeData()">
+    <!-- Header -->
+    <header>
+      <!-- Navigation -->
+      <div class="nav container">
+        <a href="#" class="logo">E-Commerce Page</a>
+        <div class="cart-icon-container">
+          <img
+            class="cart-icon"
+            src="/img/cart.png"
+            alt="cart"
+            id="cart-icon"
+          />
+          <div class="cart-indicator">0</div>
+        </div>
+      </div>
+    </header>
+
+    <!-- cart -->
+    <div class="cart">
+      <h2 class="cart-title">Your Cart</h2>
+      <div class="cart-content">
+        <!-- here will be added in javascript -->
+      </div>
+      <div class="total">
+        <div class="total-title">Total</div>
+        <div class="total-price">$0</div>
+      </div>
+      <button type="button" class="btn-buy">Buy Now</button>
+      <img
+        src="/img/close.png"
+        alt="close"
+        class="close-icon"
+        id="close-icon"
+      />
+    </div>
+
+    <!-- Shop Cards -->
+    <section class="shop container">
+      <h2 class="section-title">Shop Products</h2>
+      <!-- Content -->
+      <div class="shop-content" id="shop-container"></div>
+    </section>
+
+    <!-- Link to Main js file -->
+    <script src="src/main.js"></script>
+  </body>
+</html>
